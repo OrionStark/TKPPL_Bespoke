@@ -6,6 +6,7 @@ html
     title Best Thing Ever
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(rel='stylesheet', type='text/css', href='build/animations.css')
 
   body
 
@@ -14,7 +15,7 @@ html
       section
         h1 Best Thing Ever
 
-      section
+      section(data-bespoke-fx-direction="vertical")
         h2 Keyboard Interaction
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
 
@@ -44,8 +45,9 @@ html
               keys(),
               touch(),
               bullets('li, .bullet')
+              fx: true,
+              loop: true
             ]);
-
       section(data-bespoke-hash='named-route')
         h2 Named Route
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
@@ -69,3 +71,7 @@ html
             a(href='http://twitter.com/markdalgleish')  -@markdalgleish
 
     script(src='build/build.js')
+    script(src='build/demo.js')
+    script(src='build/bespoke-fx.js')
+    script(src='build/bespoke.min.js')
+    script(src='libs/modernizr/modernizr.custom.js')
