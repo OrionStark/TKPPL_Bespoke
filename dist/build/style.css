@@ -1,0 +1,96 @@
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Satisfy);*/
+
+html, body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #FFF;
+    background: #333;
+}
+
+.bespoke-slide h1 {
+    font-weight: 300;
+    font-size: 4.4em;
+    line-height: 1;
+    letter-spacing: 6px;
+    margin: 0 0 20px 0;
+    width: 100%;
+    text-transform: uppercase;
+    word-spacing: -0.3em;
+}
+.bespoke-slide p {
+    font-size: 30px;
+}
+
+.bespoke-slide h1 span {
+    font-family: 'Satisfy', serif;
+    font-weight: 400;
+    text-transform: none;
+    word-spacing: 0;
+    letter-spacing: 0;
+    display: block;
+    opacity: 0.4;
+}
+.bespoke-slide ul li {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.bespoke-slide h1 strong {
+}
+
+.bespoke-slide h2 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1;
+    letter-spacing: 6px;
+    margin: 0;
+    width: 100%;
+    text-transform: uppercase;
+    word-spacing: -0.3em;
+}
+
+.bespoke-slide pre {
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 0.8em;
+    line-height: 1em;
+    overflow: hidden;
+    color: #333;
+    font-size: 18px;
+}
+
+.bespoke-slide pre strong {
+}
+
+.bespoke-slide:nth-child(6n+1) {
+    background: #0AC2D2;
+}
+.bespoke-slide:nth-child(6n+2) {
+    background: #7BB7FA;
+}
+.bespoke-slide:nth-child(6n+3) {
+    background: #60D7A9;
+}
+.bespoke-slide:nth-child(6n+4) {
+    background: #FDC162;
+}
+.bespoke-slide:nth-child(6n+5) {
+    background: #FD6A62;
+}
+.bespoke-slide:nth-child(6n+6) {
+    background: #F68DBB;
+}
+.bespoke-slide:last-child {
+    background: #333;
+}
+
+.header {
+    padding: 0 5px;
+}
