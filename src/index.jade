@@ -6,39 +6,55 @@ html
     title Best Thing Ever
     link(rel='stylesheet', type='text/css', href='build/build.css')
     link(rel='stylesheet', type='text/css', href='build/animations.css' media='screen' title='no title' charset='utf-8')
+    // External Javascript from another Libraries [Robby Muhammad Nst]
+    // Don't change any line of this code without my premission [Robby Muhammad Nst]
+    script(src='build/Ext Javascript/jquery-3.2.1.min.js')
+    script(src='build/Ext Javascript/extstyle.js')
+    script(src='build/Ext Javascript/p5.js')
+    script(src='build/Ext Javascript/p5.dom.js')
+    script(src='build/Ext Javascript/p5.sound.js')
+    // If you have any external Javascript just enter it here
   body
 
-    article
+    article.firstpage
 
-      section
-        h1 Best Thing Ever
+      section.emp#1
+        span.title Best Thing Ever
+        hr(width="300px", font-family="Aleo", border="none", color="white")
+        br
+        img(src='build/img/welcome.png').hello
+        div.logo
+          div.log
+            img(src='build/img/p5-sq-reverse.svg').t
+          div.log
+            img(src='build/img/processing.png').t
 
-<<<<<<< HEAD
-      section(data-bespoke-fx-direction="vertical")
-=======
-
-      section 
+      section#2.emp
+        img(src='build/img/p5-sq-reverse.svg').p5jsimg
+        span.name Robby Muhammad Nst
+      section.emp
+        span.titlea Javascrip Framework p5js
+        span.description Merupakan framework javascript yang sering digunakan
+          untuk membuat sketsa ataupun seni yang lainnya.
+      section.emp
+        img(src='build/img/processing.png' width='120px' height='auto')
+        span.description Pada IDE Processing, mendukung beberapa
+          bahasa pemrograman untuk membangun sketsa.
+          Diantaranya adalah : 
+          ul
+            li Java
+            li Javascript [p5js]
+            li Python
+            li Java android programming
+      // If you want to add another slied, just type new section with emp class under your team work field
+      section.emp
         h1 How to make simple Visual Novel 
         h1 Using TyranoBuilder
       
-      section 
+      section.emp
         p First
         img(src="build/img/a.jpg").a 
-
-      section
->>>>>>> 67fd592684ee150a258f81835397a54404c1f532
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
-
-      section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
-
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
-
-      section
+      section.emp
         h2 Bullet List
         h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
         ul
@@ -46,7 +62,7 @@ html
           li Bullet 2
           li Bullet 3
 
-      section
+      section#9.emp
         h2 Syntax Highlighting
         h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
         pre
@@ -59,16 +75,7 @@ html
               fx: true,
               loop: true
             ]);
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-        h1 Ini dari stephen, percobaan
-      section
+      section#12.emp
         h2.bullet Just the beginning...
         br
         ul
@@ -80,5 +87,4 @@ html
           li
             strong Enjoy! :)
             a(href='http://twitter.com/markdalgleish')  -@markdalgleish
-
-    script(src='build/build.js')
+    script(src='build/build.js' type='text/javascript')

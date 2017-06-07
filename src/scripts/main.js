@@ -1,7 +1,10 @@
 // Require Node modules in the browser thanks to Browserify: http://browserify.org
 var bespoke = require('bespoke'),
   fx = require('bespoke-fx'),
+  greeny = require('bespoke-theme-greeny'),
   cube = require('bespoke-theme-cube'),
+  //carousel = require('bespoke-theme-carousel'),
+  sea = require('bespoke-theme-sea'),
   keys = require('bespoke-keys'),
   touch = require('bespoke-touch'),
   bullets = require('bespoke-bullets'),
@@ -14,6 +17,8 @@ var bespoke = require('bespoke'),
 // Bespoke.js
 bespoke.from('article', [
   cube(),
+  //carousel(),
+  //sea(),
   keys(),
   touch(),
   bullets('li, .bullet'),
@@ -23,21 +28,8 @@ bespoke.from('article', [
   progress(),
   forms()
 ]);
-bespoke.from('#presentation', [
-  fx()
-]);
-bespoke.from('article', [
-  bespoke.plugins.fx()
-]);
-bespoke.horizontal.from('article', {
-  fx: true
-})
-bespoke.vertical.from('article', {
-  fx: {
-      direction: "vertical",
-      transition: "cube",
-      reverese: true
-    }
+bespoke.from('article', {
+  fullscreenbackground: true
 });
 // Prism syntax highlighting
 // This is actually loaded from "bower_components" thanks to

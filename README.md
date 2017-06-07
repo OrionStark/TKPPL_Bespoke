@@ -5,13 +5,16 @@
 
 First, ensure you have the following installed:
 
-1. [Node.js](http://nodejs.org)
-2. [Bower](http://bower.io): `$ npm install -g bower`
-3. [Gulp](http://gulpjs.com): `$ npm install -g gulp`
+# ======================================================================
 
-Then, install dependencies and run the preview server:
+Beberapa libraries dari luar telah ditambah yang merupakan
+libraries dari p5js.
 
-```bash
-$ npm install && bower install
-$ gulp serve
-```
+
+## PERHATIAN!!!
+Jangan ganti code javascript yang ada tanpa membicarakannya dahulu kepada saya (Robby)
+
+## Peringatan
+1. Setiap ada kendala atau apapun tolong post di trello untuk segera dibantu
+2. Setiap ada perubahan fitur apapun tolong di bicarain di trello bersama yang lain
+3. Usahain lakukan apa yang bisa dilakukan, jangan lakukan yang aneh-aneh 
