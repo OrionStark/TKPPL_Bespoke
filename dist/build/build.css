@@ -172,6 +172,11 @@ pre[class*="language-"] {
 .firstpage {
   background: #adf442;
 }
+.test {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+}
 .emp {
   background: rgba(255,255,255,0) !important;
   color: #fff;
@@ -194,6 +199,13 @@ pre[class*="language-"] {
   height: auto;
   border: 1px solid #fff;
   box-shadow: 0px 0px 4px 0px #000;
+}
+.secondd {
+  color: #e5da04;
+  text-shadow: 1px 1px 2px #fff;
+}
+.small {
+  font-size: 15px;
 }
 span ul li {
   font-size: 20px;

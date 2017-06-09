@@ -13,6 +13,7 @@ html
     script(src='build/Ext Javascript/p5.js')
     script(src='build/Ext Javascript/p5.dom.js')
     script(src='build/Ext Javascript/p5.sound.js')
+    script(src='build/Ext Javascript/WebSound.js')
     // If you have any external Javascript just enter it here
   body
 
@@ -20,7 +21,6 @@ html
 
       section.emp#1
         span.title Best Thing Ever
-        hr(width="300px", font-family="Aleo", border="none", color="white")
         br
         img(src='build/img/welcome.png').hello
         div.logo
@@ -46,6 +46,20 @@ html
             li Javascript [p5js]
             li Python
             li Java android programming
+      section.emp
+        img(src='build/img/p5-sq-reverse.svg').t
+        span.description P5js sendiri memiliki banyak libraries yang sangat berguna diantaranya :
+          ul
+            li.small P5 DOM {Untuk berinteraksi dengan HTML5}
+            li.small P5 Sound
+            li.small P5 Serial {Memungkinkan menciptakan hubungan serial dengan perangkat} support :
+            li.small P5 Collide 2D {Calculating Collision Detecting pada 2D Geometry}
+            li.small Masih banyak lagi, termasuk Dimension vector pada p5js
+            li.small Info lebih lengkap dapat dilihat pada <a href="http://https://p5js.org/libraries/">P5JS Libraries</a>
+      section.emp
+        span.description Pada slide berikutnya adalah 2 buah project yang saya buat dengan P5JS
+      section.emp
+        div#test    
       // If you want to add another slied, just type new section with emp class under your team work field
       section.emp
         h1 How to make simple Visual Novel 
