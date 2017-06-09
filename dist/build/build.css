@@ -165,16 +165,65 @@ pre[class*="language-"] {
   width: 100%;
   height: 40px;
 }
+.apa {
+  margin-top: 100px;
+}
+.text1 {
+  margin-top: -100px;
+}
 .a {
   width: 620px;
   height: auto;
+  margin-top: 20px;
+}
+.b {
+  width: 200px;
+  height: auto;
+  margin-left: 500px;
+  margin-top: -140px;
+}
+.c {
+  width: 620px;
+  height: auto;
+}
+.d {
+  width: 200px;
+  height: auto;
+  margin-right: 430px;
+  margin-top: -200px;
+}
+.e {
+  width: 100px;
+  height: auto;
+}
+.f {
+  width: 100px;
+  height: auto;
+  margin-left: 800px;
+}
+.f1 {
+  width: 100px;
+  height: auto;
+  margin-right: 850px;
+  margin-top: -80px;
+}
+ul {
+  font-family: Aleo;
 }
 .firstpage {
-  background: #adf442;
+  background: #4286f4;
 }
-.test {
-  width: 600px;
-  height: 400px;
+.bg {
+  width: 1300px;
+  height: 720px;
+  margin-top: -20px;
+  background: url("/build/img/circuit-grounds.jpg");
+  background-size: cover;
+  margin-top: 20px;
+}
+#test {
+  width: 670px;
+  margin-left: 175px;
   position: absolute;
 }
 .emp {
@@ -209,4 +258,153 @@ pre[class*="language-"] {
 }
 span ul li {
   font-size: 20px;
+}
+p {
+  font-family: Aleo;
+  font-size: 24px;
+}
+.playertoggle {
+  width: 1360px;
+  height: 900px;
+  background: url("/build/img/circuit-grounds.jpg");
+  background-size: cover;
+  margin-left: 0px;
+  margin-top: -210px;
+  position: absolute;
+  box-shadow: 0px 0px 4px 0px #000;
+}
+.anybutton {
+  width: 380px;
+  height: 70px;
+  background: rgba(229,2,176,0.6);
+  margin-left: -340px;
+  margin-top: -210px;
+  box-shadow: 0px 0px 4px 0px #000;
+  border-radius: 2px;
+  position: absolute;
+}
+.wall {
+  width: 380px;
+  height: 430px;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  margin-left: -340px;
+  box-shadow: 0px 0px 4px 0px #000;
+  margin-top: 40px;
+}
+#first {
+  width: 380px;
+  height: 70px;
+  margin-top: 5px;
+  color: #04afed;
+  border: 1px solid rgba(255,255,255,0.6);
+}
+#second {
+  width: 380px;
+  height: 70px;
+  margin-top: 5px;
+  color: #04afed;
+  border: 1px solid rgba(255,255,255,0.6);
+}
+#third {
+  width: 380px;
+  height: 70px;
+  margin-top: 5px;
+  color: #04afed;
+  border: 1px solid rgba(255,255,255,0.6);
+}
+#fourth {
+  width: 380px;
+  height: 70px;
+  margin-top: 5px;
+  color: #04afed;
+  border: 1px solid rgba(255,255,255,0.6);
+}
+#first:hover,
+#second:hover,
+#third:hover,
+#fourth:hover {
+  background: rgba(0,181,221,0.6);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+#credit {
+  width: 380px;
+  height: 30px;
+  background: rgba(255,255,255,0.6);
+  margin-top: 85px;
+  font-family: Aleo;
+  border: 1px solid #fff;
+}
+#credit p {
+  font-size: 10px;
+  line-height: 30px;
+  color: #000;
+}
+.songlist {
+  font-family: Aleo;
+  margin-top: -30px;
+  font-size: 16px;
+  margin-left: 30px;
+  color: #fff;
+}
+.album {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+.toggleplay {
+  width: 50px;
+  height: 40px;
+  background: rgba(255,255,255,0);
+  border: 1px solid #fff;
+  line-height: 40px;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 15px;
+  float: left;
+}
+.next {
+  width: 50px;
+  height: 40px;
+  background: rgba(255,255,255,0);
+  border: 1px solid #fff;
+  line-height: 40px;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 15px;
+  float: left;
+}
+.prev {
+  width: 50px;
+  height: 40px;
+  background: rgba(255,255,255,0);
+  border: 1px solid #fff;
+  line-height: 40px;
+  position: relative;
+  margin-left: 120px;
+  margin-top: 15px;
+  float: left;
+}
+.stop {
+  width: 50px;
+  height: 40px;
+  background: rgba(255,255,255,0);
+  border: 1px solid #fff;
+  line-height: 40px;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 15px;
+  float: left;
+}
+.toggleplay:hover,
+.next:hover,
+.prev:hover,
+.stop:hover {
+  background: rgba(0,181,221,0.6);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  cursor: pointer;
 }

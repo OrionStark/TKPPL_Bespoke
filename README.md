@@ -5,7 +5,7 @@
 
 First, ensure you have the following installed:
 
-# ======================================================================
+# =====================================================
 
 Beberapa libraries dari luar telah ditambah yang merupakan
 libraries dari p5js.
@@ -18,3 +18,10 @@ Jangan ganti code javascript yang ada tanpa membicarakannya dahulu kepada saya (
 1. Setiap ada kendala atau apapun tolong post di trello untuk segera dibantu
 2. Setiap ada perubahan fitur apapun tolong di bicarain di trello bersama yang lain
 3. Usahain lakukan apa yang bisa dilakukan, jangan lakukan yang aneh-aneh 
+
+## Fitur yang sudah selesai
+# Untuk saat ini, berikut adalah beberapa fitur yang sudah selesai
+1. Audio Visualizer
+2. Audio Player dan Playlistnya
+3. Particle 50% Selesai
+=========================================[Robby]
