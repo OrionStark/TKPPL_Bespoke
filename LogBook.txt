@@ -1,0 +1,65 @@
+======================================================
+
+
+Update Logbook ini jika kalian ingin memberikan sesuatu
+
+
+======================================================
+
+Log Book
+===========
+
+Scrum Master [Robby Muhammad Nst]
+
+=================================== :
+
+Nama Anggota : 
+	[+] Stephen Putra Sutra
+	[+] Kevin Wijaya
+	[+] Erwin Hartanto
+===================================
+1. Hari pertama
+	[+] Pengumpulan dan perdisukusian hal yang ingin dilakukan
+	[+] Pembangunan Repository
+
+2. Hari berikutnya
+	[+] Pengarahan kepada anggota untuk membuat repository local masing-masing
+	[+] Pengarahan cara menginstal bespoke
+
+3. Hari berikutnya
+	[+] Penambahan fitur Audio
+	[+] Audio Visualizer
+
+4. Hari berikutnya
+	-
+	-
+	-
+	-
+5. Hari berikutnya
+	[+] Pengerjaan fitur Audio dan Audio visualizer
+	[+] (Stephen) menambahkan Slide tentang tyrano builder
+6. Hari berikutnya
+	-
+ 	-
+	-
+	-
+	-
+7. Hari berikutnya
+	[+] Pengarahan kepada Stephen untuk mengerjakan presentasi
+8. Hari berikutnya
+	[+] Pengarahan kepada Stephen untuk mengerjakan presentasi
+9. Hari berikutnya
+	[+] Pengarahan kepada Stephen untuk mengerjakan presentasi
+10. Hari berikutnya
+	[+] Pengerjaan rutin untuk Audio
+	[+] Pengerjaan rutin untuk Audio Visualizer
+	[+] Penambahan fitur particle dan terrain
+11. Hari berikutnya
+	[+] Penanganan bug pada Audio [XmlhttpRequest]
+	[+] Pengarahan untuk menggunakan chrome
+	[+] Pengerjaan fitur Terrain
+12. Hari berikutnya
+	[+] Penggabungan code p5js dengan konsep yang berbeda untuk menghindari terjadinya pemakaian fungsi yang sama
+	[+] Pengerjaan fitur Terrain
+	[+] Update README.md
+	

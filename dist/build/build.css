@@ -266,7 +266,7 @@ p {
 .playertoggle {
   width: 1360px;
   height: 900px;
-  background: url("/build/img/circuit-grounds.jpg");
+  background: url("img/circuit-grounds.jpg");
   background-size: cover;
   margin-left: 0px;
   margin-top: -210px;
@@ -407,4 +407,15 @@ p {
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   cursor: pointer;
+}
+.details {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background: rgba(224,2,172,0.6);
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px #000;
+}
+.specc {
+  color: #0cb6ff;
 }

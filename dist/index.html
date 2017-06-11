@@ -14,6 +14,7 @@
     <script src="build/Ext Javascript/p5.dom.js"></script>
     <script src="build/Ext Javascript/p5.sound.js"></script>
     <script src="build/Ext Javascript/WebSound.js"></script>
+    <!-- script(src='build/Ext Javascript/JavascriptTerrain.js')-->
     <!-- If you have any external Javascript just enter it here-->
   </head>
   <body>
@@ -41,7 +42,7 @@
           <ul>
             <li class="small">P5 DOM {Untuk berinteraksi dengan HTML5}</li>
             <li class="small">P5 Sound</li>
-            <li class="small">P5 Serial {Memungkinkan menciptakan hubungan serial dengan perangkat} support :</li>
+            <li class="small">P5 Serial {Memungkinkan menciptakan hubungan serial dengan perangkat}</li>
             <li class="small">P5 Collide 2D {Calculating Collision Detecting pada 2D Geometry}</li>
             <li class="small">Masih banyak lagi, termasuk Dimension vector pada p5js</li>
             <li class="small">Info lebih lengkap dapat dilihat pada <a href="http://https://p5js.org/libraries/">P5JS Libraries</a></li>
@@ -57,13 +58,23 @@
           <div id="stop" class="stop"></div>
         </div>
         <div class="wall">
-          <div id="first" onclick="musicSelection(0)"><img src="build/img/mar1.png" class="album"><span class="songlist">Maroon 5 - Payphone</span></div>
-          <div id="second" onclick="musicSelection(1)"><img src="build/img/th.jpg" class="album"><span class="songlist">Marshmello - Alone&nbsp&nbsp&nbsp</span></div>
-          <div id="third" onclick="musicSelection(2)"><img src="build/img/th.jpg" class="album"><span class="songlist">Marshmello - Colour&nbsp&nbsp</span></div>
-          <div id="fourth" onclick="musicSelection(3)"><img src="build/img/dont.jpg" class="album"><span class="songlist">The Chainsmokers&nbsp&nbsp&nbsp&nbsp&nbsp</span></div>
+          <div id="first" onclick="myp5.musicSelection(0)"><img src="build/img/mar1.png" class="album"><span class="songlist">Maroon 5 - Payphone</span></div>
+          <div id="second" onclick="myp5.musicSelection(1)"><img src="build/img/th.jpg" class="album"><span class="songlist">Marshmello - Alone&nbsp&nbsp&nbsp</span></div>
+          <div id="third" onclick="myp5.musicSelection(2)"><img src="build/img/th.jpg" class="album"><span class="songlist">Marshmello - Colour&nbsp&nbsp</span></div>
+          <div id="fourth" onclick="myp5.musicSelection(3)"><img src="build/img/dont.jpg" class="album"><span class="songlist">The Chainsmokers&nbsp&nbsp&nbsp&nbsp&nbsp</span></div>
           <div id="credit">
-            <p>Created by: Robby Muhammad Nst    </p>
+            <p>Created by: Robby Muhammad Nst</p>
           </div>
+        </div>
+      </section>
+      <section class="emp">
+        <div id="full-page"></div>
+        <div class="details"><span class="titlea specc">Terrain Sample</span><br><span class="description">Pada program ini menggunakan : </span><br><br><br>
+          <ul>
+            <li class="description">Vertex drawing</li>
+            <li class="description">Perlin noise</li>
+            <li class="description">BeginShape without paramater</li>
+          </ul><br><br><br><span class="small specc">Robby Muhammad Nst</span>
         </div>
       </section>
       <!-- If you want to add another slied, just type new section with emp class under your team work field-->
