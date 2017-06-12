@@ -201,11 +201,55 @@ pre[class*="language-"] {
   height: auto;
   margin-left: 800px;
 }
+.g {
+  width: 600px;
+  height: auto;
+  margin-top: -150px;
+}
+.h {
+  width: 200px;
+  height: auto;
+  margin-left: -800px;
+  margin-top: -300px;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.h1 {
+  width: 200px;
+  height: auto;
+  margin-right: -800px;
+  margin-top: -150px;
+}
 .f1 {
   width: 100px;
   height: auto;
   margin-right: 850px;
   margin-top: -80px;
+}
+.a1 {
+  width: 250px;
+  height: auto;
+  margin-left: -650px;
+  margin-top: 50px;
+}
+.a2 {
+  width: 250px;
+  height: auto;
+  margin-left: -10px;
+  margin-top: -205px;
+}
+.a3 {
+  width: 250px;
+  height: auto;
+  margin-right: -600px;
+  margin-top: -260px;
+}
+.f2 {
+  width: 200px;
+  height: auto;
+  margin-top: -50px;
 }
 ul {
   font-family: Aleo;
