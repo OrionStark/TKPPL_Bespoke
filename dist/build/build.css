@@ -419,3 +419,7 @@ p {
 .specc {
   color: #0cb6ff;
 }
+#full-page,
+#giveme-bubles {
+  position: absolute;
+}

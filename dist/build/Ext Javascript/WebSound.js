@@ -1,10 +1,21 @@
+/*
+	Really.... my page will completely slow if I make more project at this page
+	So I just make 3 project code to demonstrate P5JS and Processing.
+
+
+	If you want more, you can check codingtrain channel on youtube presented by Daniel Shiffman
+
+
+	or follow my Instagram to see my own project all the time. {orion_stark}
+
+*/
 
 // Prototype for Sound in my presentation
 /*
 	Author : Robby Muhammad Nst
 	Special thanks to : Daniel Shiffman (He teach everyone how fun coding is) / my special teacher when I'm bored of school coding
 	Thanks to github community specially at P5JS Repository
-	THanks to Processing
+	Thanks to Processing
 
 */
 //=========================================================================
@@ -121,7 +132,7 @@ var p = function(p){
   		p.clear()
   		//background(0);
   		p.noFill();
-  		console.log(rad);
+  		//console.log(rad);
   		p.strokeWeight(2);
   		p.stroke(255);
   		p.translate(p.width/2, p.height/2);
@@ -168,11 +179,11 @@ var terrain = function(terrain){
   		is not working with TRIANGLE_STRIP
 	*/
 
-	var scl = 50;
+	var scl = 120;
 	var sketch_grab = [];
 	var cols, rows;
 	var flying = 0;
-	var h = 2000;
+	var h = 4200;
 	terrain.setup = function() {
  		terrain.createCanvas(terrain.windowWidth, terrain.windowHeight, terrain.WEBGL);
   		cols = terrain.windowWidth * 3 / scl;
@@ -227,3 +238,123 @@ var terrain = function(terrain){
 //========================================================================= End
 
 var terrain_builder = new p5(terrain, "full-page");
+
+
+/*
+
+
+	Author : Robby Muhammad Nst
+	
+	Under this comment is the code that could make random particle with
+	random colors and size that will going to it's velocity to moving arround the windows
+
+	
+	=======================================================================
+*/
+/*
+function Bubblecreator(){};
+Bubblecreator.prototype = {
+	createbub : function(){
+    		this.x = this.width/2;
+    		this.y = this.height/2;
+    		this.bx = random(-5, 5);
+    		this.by = random(-5, 5);
+    		this.rad = random(10, 50);
+    		this.Red = random(0, 255);
+    		this.Green = random(0, 255);
+    		this.Blue = random(0, 255);
+  	},
+  	fillandsize : function(){
+    		p5.fill(this.Red, this.Green, this.Blue);
+    		p5.ellipse(this.x, this.y, this.rad, this.rad);
+    		this.x = this.x + this.bx;
+    		this.y = this.y + this.by;
+    		if(this.x > this.width - this.rad/2)
+    		{
+      			this.bx = -1 * this.Math.abs(this.bx);
+    		}
+    		if(this.x < this.rad/2)
+    		{
+      			this.bx = this.Math.abs(this.bx);
+    		}
+    		if(this.y > height - this.rad/2)
+    		{
+      			this.by = -1 * this.Math.abs(this.by);
+    		}
+    		if(this.y < this.rad/2)
+    		{
+      			this.by = this.Math.abs(this.by);
+    		}
+  	}
+}
+*/
+/*
+
+	This page is getting lagging because, we used 3 canvas that request animation frames all the times
+	and at the same time. So it could make the page and the particles run slowly XD
+
+	And if you know, the draw function for each feature is do infinite looping to draw a new frame every time
+	So if we used 3 canvas that will run together at one page. it's too god damn hight.
+
+*/
+var buble = function(buble){
+	var Bubblecreator = function()
+	{
+		this.x = buble.width/2;
+    		this.y = buble.height/2;
+    		this.bx = buble.random(-5, 5);
+    		this.by = buble.random(-5, 5);
+    		this.rad = buble.random(10, 50);
+   		this.Red = buble.random(0, 255);
+   		this.Green = buble.random(0, 255);
+    		this.Blue = buble.random(0, 255);
+	};
+	Bubblecreator.prototype.fillandsize = function(){
+		buble.fill(this.Red, this.Green, this.Blue);
+    		buble.ellipse(this.x, this.y, this.rad, this.rad);
+    		this.x = this.x + this.bx;
+    		this.y = this.y + this.by;
+    		if(this.x > buble.width - this.rad/2)
+    		{
+      			this.bx = -1 * Math.abs(this.bx);
+    		}
+    		if(this.x < this.rad/2)
+    		{
+      			this.bx = Math.abs(this.bx);
+    		}
+    		if(this.y > buble.height - this.rad/2)
+    		{
+      			this.by = -1 * Math.abs(this.by);
+    		}
+    		if(this.y < this.rad/2)
+    		{
+      			this.by = Math.abs(this.by);
+    		}
+	};
+	var bubles = [];
+	buble.setup = function() {
+  		buble.createCanvas(buble.windowWidth-380, buble.windowHeight-195);  
+  		for(var i = 0; i < 90; i++)
+  		{
+     			bubles[i] = new Bubblecreator();
+  		}
+	};
+
+	buble.draw = function() {
+  		buble.background(255);
+		buble.clear();
+  		for(var i = 0; i < bubles.length; i++)
+  		{
+    			bubles[i].fillandsize();
+  		};
+	};
+	buble.windowResized = function(){
+  		buble.resizeCanvas(buble.windowWidth-340, buble.windowHeight-185);
+	}
+};
+/*
+
+	Let's call it
+
+*/
+var give_me_bubles = new p5(buble, "giveme-bubles");
