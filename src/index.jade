@@ -13,14 +13,15 @@ html
     script(src='build/Ext Javascript/p5.js')
     script(src='build/Ext Javascript/p5.dom.js')
     script(src='build/Ext Javascript/p5.sound.js')
+    script(src='build/Ext Javascript/WebSound.js')
+    // script(src='build/Ext Javascript/JavascriptTerrain.js')
     // If you have any external Javascript just enter it here
   body
 
     article.firstpage
-
+      // Robby workspaces
       section.emp#1
         span.title Best Thing Ever
-        hr(width="300px", font-family="Aleo", border="none", color="white")
         br
         img(src='build/img/welcome.png').hello
         div.logo
@@ -46,8 +47,62 @@ html
             li Javascript [p5js]
             li Python
             li Java android programming
-      // If you want to add another slied, just type new section with emp class under your team work field
       section.emp
+        img(src='build/img/p5-sq-reverse.svg').t
+        span.description P5js sendiri memiliki banyak libraries yang sangat berguna diantaranya :
+          ul
+            li.small P5 DOM {Untuk berinteraksi dengan HTML5}
+            li.small P5 Sound
+            li.small P5 Serial {Memungkinkan menciptakan hubungan serial dengan perangkat}
+            li.small P5 Collide 2D {Calculating Collision Detecting pada 2D Geometry}
+            li.small Masih banyak lagi, termasuk Dimension vector pada p5js
+            li.small Info lebih lengkap dapat dilihat pada <a href="http://https://p5js.org/libraries/">P5JS Libraries</a>
+      section.emp
+        span.description Pada slide berikutnya adalah 2 buah project yang saya buat dengan P5JS
+      section.emp
+        div.playertoggle
+        div#test
+        div.anybutton
+          div.prev#prev
+          div.toggleplay#toggleplay
+          div.next#next
+          div.stop#stop
+        div.wall
+          div#first(onclick='myp5.musicSelection(0)')
+            img(src="build/img/mar1.png").album
+            span.songlist Maroon 5 - Payphone
+          div#second(onclick='myp5.musicSelection(1)')
+            img(src="build/img/th.jpg").album
+            span.songlist Marshmello - Alone&nbsp&nbsp&nbsp
+          div#third(onclick='myp5.musicSelection(2)')
+            img(src="build/img/th.jpg").album
+            span.songlist Marshmello - Colour&nbsp&nbsp
+          div#fourth(onclick='myp5.musicSelection(3)')
+            img(src="build/img/dont.jpg").album
+            span.songlist The Chainsmokers&nbsp&nbsp&nbsp&nbsp&nbsp
+          div#credit
+           p Created by: Robby Muhammad Nst
+      section.emp
+          div#full-page
+          div.details
+            span.titlea.specc Terrain Sample
+            br
+            span.description Pada program ini menggunakan : 
+            br
+            br
+            br
+            ul
+              li.description Vertex drawing
+              li.description Perlin noise
+              li.description BeginShape without paramater
+            br
+            br
+            br
+            span.small.specc Robby Muhammad Nst
+      // If you want to add another slied, just type new section with emp class under your team work field
+      // Stephen Workspaces
+      section.emp
+        img(src="build/img/karen.gif").ab
         p How to make Visual Novel
         p Using TyranoBuilder
         img(src="build/img/abc.png")
@@ -62,6 +117,7 @@ html
           li 1. Story ( Cerita )
           li 2. Gambar BackGround 
           li 3. Character      
+          li 4. Music
       section.emp
         img(src="build/img/hatsune1.gif").f
         img(src="build/img/hatsune1.gif").f1
@@ -78,18 +134,39 @@ html
         img(src="build/img/penting2.jpg").a2
         img(src="build/img/penting3.jpg").a3
       section.emp
+        p Bagaimana gambaran dalam sebuah Visual Novel ??
+        img(src="build/img/2.png").b
+      section.emp
         img(src="build/img/d.jpg").g
         img(src="build/img/hatsune2.png").h
         img(src="build/img/hatsune2.png").h1
-
       section.emp
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+        img(src="build/img/e.jpg").g
+        img(src="build/img/hatsune2.png").h
+        img(src="build/img/hatsune2.png").h1
+      section.emp
         ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
-
+           li Membuat sebuah "Visual Novel" yang dapat berjalan dengan baik
+      section.emp
+        p Startup Projek
+        img(src="build/img/Tyrano1.png").a4
+      section.emp
+        p Tipe Novel
+        img(src="build/img/Tyrano2.png").a4
+      section.emp
+        p Scaling
+        img(src="build/img/Tyrano3.png").a4
+      section.emp
+        p Optional Settings
+        img(src="build/img/Tyrano4.png").a4
+      section.emp
+        p Additional Options
+        img(src="build/img/Tyrano5.png").a1
+        img(src="build/img/Speedwagon.png").a2
+        img(src="build/img/Tyrano6.png").a3
+      section.emp
+        img(src="build/img/joseph.jpg").a5
+        p Good Luck Creating!
       section#9.emp
         h2 Syntax Highlighting
         h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>

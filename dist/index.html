@@ -13,12 +13,14 @@
     <script src="build/Ext Javascript/p5.js"></script>
     <script src="build/Ext Javascript/p5.dom.js"></script>
     <script src="build/Ext Javascript/p5.sound.js"></script>
+    <script src="build/Ext Javascript/WebSound.js"></script>
+    <!-- script(src='build/Ext Javascript/JavascriptTerrain.js')-->
     <!-- If you have any external Javascript just enter it here-->
   </head>
   <body>
     <article class="firstpage">
-      <section id="1" class="emp"><span class="title">Best Thing Ever</span>
-        <hr width="300px" font-family="Aleo" border="none" color="white"><br><img src="build/img/welcome.png" class="hello">
+      <!-- Robby workspaces-->
+      <section id="1" class="emp"><span class="title">Best Thing Ever</span><br><img src="build/img/welcome.png" class="hello">
         <div class="logo">
           <div class="log"><img src="build/img/p5-sq-reverse.svg" class="t"></div>
           <div class="log"><img src="build/img/processing.png" class="t"></div>
@@ -36,8 +38,48 @@
             <li>Python</li>
             <li>Java android programming</li>
           </ul></span></section>
-      <!-- If you want to add another slied, just type new section with emp class under your team work field-->
+      <section class="emp"><img src="build/img/p5-sq-reverse.svg" class="t"><span class="description">P5js sendiri memiliki banyak libraries yang sangat berguna diantaranya :
+          <ul>
+            <li class="small">P5 DOM {Untuk berinteraksi dengan HTML5}</li>
+            <li class="small">P5 Sound</li>
+            <li class="small">P5 Serial {Memungkinkan menciptakan hubungan serial dengan perangkat}</li>
+            <li class="small">P5 Collide 2D {Calculating Collision Detecting pada 2D Geometry}</li>
+            <li class="small">Masih banyak lagi, termasuk Dimension vector pada p5js</li>
+            <li class="small">Info lebih lengkap dapat dilihat pada <a href="http://https://p5js.org/libraries/">P5JS Libraries</a></li>
+          </ul></span></section>
+      <section class="emp"><span class="description">Pada slide berikutnya adalah 2 buah project yang saya buat dengan P5JS</span></section>
       <section class="emp">
+        <div class="playertoggle"></div>
+        <div id="test"></div>
+        <div class="anybutton">
+          <div id="prev" class="prev"></div>
+          <div id="toggleplay" class="toggleplay"></div>
+          <div id="next" class="next"></div>
+          <div id="stop" class="stop"></div>
+        </div>
+        <div class="wall">
+          <div id="first" onclick="myp5.musicSelection(0)"><img src="build/img/mar1.png" class="album"><span class="songlist">Maroon 5 - Payphone</span></div>
+          <div id="second" onclick="myp5.musicSelection(1)"><img src="build/img/th.jpg" class="album"><span class="songlist">Marshmello - Alone&nbsp&nbsp&nbsp</span></div>
+          <div id="third" onclick="myp5.musicSelection(2)"><img src="build/img/th.jpg" class="album"><span class="songlist">Marshmello - Colour&nbsp&nbsp</span></div>
+          <div id="fourth" onclick="myp5.musicSelection(3)"><img src="build/img/dont.jpg" class="album"><span class="songlist">The Chainsmokers&nbsp&nbsp&nbsp&nbsp&nbsp</span></div>
+          <div id="credit">
+            <p>Created by: Robby Muhammad Nst</p>
+          </div>
+        </div>
+      </section>
+      <section class="emp">
+        <div id="full-page"></div>
+        <div class="details"><span class="titlea specc">Terrain Sample</span><br><span class="description">Pada program ini menggunakan : </span><br><br><br>
+          <ul>
+            <li class="description">Vertex drawing</li>
+            <li class="description">Perlin noise</li>
+            <li class="description">BeginShape without paramater</li>
+          </ul><br><br><br><span class="small specc">Robby Muhammad Nst</span>
+        </div>
+      </section>
+      <!-- If you want to add another slied, just type new section with emp class under your team work field-->
+      <!-- Stephen Workspaces-->
+      <section class="emp"><img src="build/img/karen.gif" class="ab">
         <p>How to make Visual Novel</p>
         <p>Using TyranoBuilder</p><img src="build/img/abc.png">
       </section>
@@ -50,6 +92,7 @@
           <li>1. Story ( Cerita )</li>
           <li>2. Gambar BackGround </li>
           <li>3. Character      </li>
+          <li>4. Music</li>
         </ul>
       </section>
       <section class="emp"><img src="build/img/hatsune1.gif" class="f"><img src="build/img/hatsune1.gif" class="f1">
@@ -59,15 +102,33 @@
         <p class="text1">Filtur" yang terdapat di dalam </p><img src="build/img/b.jpg" class="c">
       </section>
       <section class="emp"><img src="build/img/hogehoge1.gif" class="f2"><img src="build/img/penting1.jpg" class="a1"><img src="build/img/penting2.jpg" class="a2"><img src="build/img/penting3.jpg" class="a3"></section>
-      <section class="emp"><img src="build/img/d.jpg" class="g"><img src="build/img/hatsune2.png" class="h"><img src="build/img/hatsune2.png" class="h1"></section>
       <section class="emp">
-        <h2>Bullet List</h2>
-        <h3 class="bullet">Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a></h3>
+        <p>Bagaimana gambaran dalam sebuah Visual Novel ??</p><img src="build/img/2.png" class="b">
+      </section>
+      <section class="emp"><img src="build/img/d.jpg" class="g"><img src="build/img/hatsune2.png" class="h"><img src="build/img/hatsune2.png" class="h1"></section>
+      <section class="emp"><img src="build/img/e.jpg" class="g"><img src="build/img/hatsune2.png" class="h"><img src="build/img/hatsune2.png" class="h1"></section>
+      <section class="emp">
         <ul>
-          <li>Bullet 1</li>
-          <li>Bullet 2</li>
-          <li>Bullet 3</li>
+          <li>Membuat sebuah "Visual Novel" yang dapat berjalan dengan baik</li>
         </ul>
+      </section>
+      <section class="emp">
+        <p>Startup Projek</p><img src="build/img/Tyrano1.png" class="a4">
+      </section>
+      <section class="emp">
+        <p>Tipe Novel</p><img src="build/img/Tyrano2.png" class="a4">
+      </section>
+      <section class="emp">
+        <p>Scaling</p><img src="build/img/Tyrano3.png" class="a4">
+      </section>
+      <section class="emp">
+        <p>Optional Settings</p><img src="build/img/Tyrano4.png" class="a4">
+      </section>
+      <section class="emp">
+        <p>Additional Options</p><img src="build/img/Tyrano5.png" class="a1"><img src="build/img/Speedwagon.png" class="a2"><img src="build/img/Tyrano6.png" class="a3">
+      </section>
+      <section class="emp"><img src="build/img/joseph.jpg" class="a5">
+        <p>Good Luck Creating!</p>
       </section>
       <section id="9" class="emp">
         <h2>Syntax Highlighting</h2>
