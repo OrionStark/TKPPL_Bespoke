@@ -227,6 +227,17 @@ pre[class*="language-"] {
   margin-right: -800px;
   margin-top: -150px;
 }
+.h2 {
+  width: 200px;
+  height: auto;
+  margin-left: 800px;
+  margin-bottom: -200px;
+}
+.h3 {
+  width: 100px;
+  height: auto;
+  margin-bottom: -100px;
+}
 .f1 {
   width: 100px;
   height: auto;
@@ -256,7 +267,7 @@ pre[class*="language-"] {
   height: auto;
 }
 .a5 {
-  width: 500px;
+  width: 300px;
   height: auto;
 }
 .f2 {
